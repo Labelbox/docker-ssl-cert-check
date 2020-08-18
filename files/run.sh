@@ -1,5 +1,8 @@
 #!/bin/bash
 
+touch /tmp/healthy && echo "up" >> /tmp/healthy
+touch /tmp/healthy && echo "alive" >> /tmp/healthyLive
+
 ENDPOINTS_FILE=/ssl_endpoints_list
 
 if [[ -v ENDPOINTS ]]; then
